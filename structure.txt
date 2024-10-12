@@ -1,0 +1,22 @@
+project-root/
+├── src/
+│   ├── database.js (SQLite operations)
+│   ├── kataSelector.js (Select katas from local DB)
+│   ├── apiService.js (Codewars API interactions)
+│   ├── notificationService.js (Telegram and Email)
+│   ├── githubService.js (Update GitHub repo)
+│   ├── config.js
+│   ├── puppeteerScraper.js
+│   └── main.js (Orchestrates daily operations)
+├── data/
+│   └── katas.db (SQLite database)
+│   └── kata-ids.json
+├── scripts/
+│   └── unifiedKataUpdate.js (Periodic DB update script)
+├── .github/
+│   └── workflows/
+│       ├── daily-operations.yml
+│       └── update-kata-db.yml
+├── package.json
+├── README.md
+└── .env
