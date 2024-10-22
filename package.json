@@ -1,21 +1,30 @@
 {
   "name": "codewars",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Codewars kata tracking and progress management",
+  "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
-    "weekly-refresh": "node src/weeklyRefresh.js"
+    "update-katas": "node scripts/unifiedKataUpdate.js",
+    "update-readme": "node scripts/updateReadme.js"
   },
-  "keywords": [],
+  "keywords": [
+    "codewars",
+    "kata",
+    "training"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@octokit/rest": "^19.0.7",
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0",
     "nodemailer": "^6.9.15",
     "puppeteer": "^23.5.3",
     "sqlite3": "^5.1.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
